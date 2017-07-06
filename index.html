@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas时钟</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" type="text/css" rel="stylesheet">
+    <meta name="description" content="此页面是湖工工程张佳鸣的毕业设计作品">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+</head>
+<body id="body">
+    <div id="clockBox">
+        <canvas id="clock"></canvas>
+    </div>
+    <div class="cover" style="display: none"></div>
+    <!-- 时区盒子 -->
+    <div id="timeZone" class="box">
+        <span id="clockBtn" class="iconfont icon-Error"></span>
+        <div class="tipTitle listItem">时区选择</div>
+        <div id="timeZoneList"></div>
+    </div>
+    <!-- 按钮以及气泡 -->
+    <span class="iconBtn iconLeft iconTop font iconfont icon-caidanyangshi" tipId="clockType"></span>
+    <span id="clockType" class="tip">
+        <div class="triangle" style="left: 1vh"></div>
+        <div class="tipItem tipTitle">显示模式</div>
+    </span>
+
+    <span class="iconBtn iconRight iconTop font iconfont icon-pifu" tipId="showStyle"></span>
+    <span id="showStyle" class="tip">
+        <div class="triangle" style="right: 1vh"></div>
+        <div class="tipItem tipTitle">配色选择</div>
+    </span>
+
+    <div id="dataBox" class="font">
+        <span id="timeZoneBtn"></span>
+        <time class="font"></time>
+    </div>
+    <div id="weekBox" class="font"></div>
+</body>
+<script src="js/initialize.js"></script>
+<script src="js/configure.js"></script>
+<script src="js/data.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/event.js"></script>
+</html>
